@@ -1,0 +1,261 @@
+body{
+   /* MARGEN PREDETERMINADO DE LAS PAGINAS WEB */
+    margin: 0;
+    /* MARGEN PA DENTRO */
+    padding: 0;
+    /* TAMAÑO E FUENTE */
+    font-size: 13px;
+    /* FUENTE DE TEXTO */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ************************************************************************* */
+/* ******************************************************************** */
+/* ********************************************************** */
+/* ************ NAVEGACION ************ */
+
+header {
+    /* width:anchura heigh:altura */
+    width: 100%;
+    height: 55px;
+}
+
+header nav{
+    display: flex;
+    /* mover mi nav hacia la derecha */
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    /* ELIMINAR VIÑETAS */
+    list-style: none;
+    width: 250px;
+    /* HACEMOS EL ELEMENTO FLEXIBLE */
+    display: flex;
+    /* CENTRAR */
+    justify-content: space-between;
+    /* CENTRADO VERTICAL */
+    align-items: center;
+    height: auto;
+}
+
+nav .nav-right-section a {
+    /* QUITAR DELINEADO / LINEA */
+    text-decoration: none;
+    /* COLOR DE TEXTO */
+    color: rgba(0, 0, 0, .87);
+}
+
+nav .nav-right-section a:hover {
+    text-decoration: underline;
+}
+
+nav .nav-right-section .menu {
+    background-image: url("https://www.flaticon.es/iconos-gratis/punto"); 
+    height: 20px;
+    /* TAMAÑO DE IMAGEN DE FONDO -- CONTENIDOS */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+nav .nav-right-section .imagenpuntos {
+    height: 24px;
+    width: 24px;
+    border-style: none;
+    display:flex;
+    margin-right: 3px;
+}
+
+nav .nav-right-section img {
+    /* margin right // margen derecho y haver espacio a la foto */
+    margin-right: 20px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+nav .nav-right-section img:hover{
+    color: #202124;
+    border: 5px solid #dadce0; 
+    border-radius: 50px;
+    shape-rendering: auto;
+}
+
+/* ***********MAIN***********++** */
+/* ***********MAIN***********++** */
+/* ***********MAIN***********++** */
+/* ***********MAIN***********++** */
+/* ***********MAIN***********++** */
+
+main{
+    /* margen superior */
+    margin-top: 160px;
+    /* centrar elementos */
+    text-align: center;
+}
+
+main .main-logo {
+    width: 500px;
+    /* PROPIEDAD : VALOR1(VERTICAL) VALOR2(HORIZONTAL) */
+    /* CENTRAL MI ELEMENTO */
+    margin: auto auto;
+    margin-bottom: 40px;
+}
+
+main .main-logo img {
+    /* editar tamaño de imagen */
+    height: 100px;
+    width: auto;
+}
+
+
+/* INPUT SECTION */
+main .main-input {
+    /* anchura */
+    width: 500px;
+    /* propiedad magica que alinea el elemento al centro */
+    margin: 0 auto;
+    /* agregar imagen inferior */
+}
+
+main .main-input-container{
+    width: 500px;
+    /* anchura de linea, estilo, color */
+    border: 1px solid #dfe1e5;
+    /* borde redondeado */
+    border-radius: 15px;
+}
+
+main .main-input input {
+    height: 32px;
+    border: none;
+    outline: none;
+    width: 400px;
+}
+
+main .main-input .search-icon {
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    background-position: left;
+    padding-left: 15px;
+    background-repeat:no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+main .main-input .micro-icon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    margin-right: 17px;
+}
+
+main .main-input .can-icon {
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-position: center;
+    padding-left: 14px;
+    background-repeat: no-repeat;
+    margin-right: 90px;
+}
+
+main .main-input-container:hover {
+    box-shadow: 0px 1px 6px #20212447;
+    border-color: #dfe1e500;
+}
+
+/* main buttons section */
+
+main .main-buttons {
+    width: 500px;
+    /* vertical - horizontal */
+    margin: 0 auto;
+}
+main .main-buttons div {
+    display: inline;
+}
+
+main .main-buttons button {
+    /* separacion entre buscador y botones */
+    margin-top: 20px;
+    border: none;
+    height: 32px;
+    background-color: #f8f9fa;
+    color: #3c4043;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+main .main-buttons button:hover{
+    color: #202124;
+    /* borde + oscuro al pasar el mouse */
+    border: 1px solid #dadce0;
+    /* sombra al pasar el mouse */
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,.1);
+}
+
+footer{
+    /* align-items: flex-end; */
+    /* margin-top: 20%; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .mexico {
+    color: #3c4043;
+    background-color: #f2f2f2;
+    border: #dfe1e5;
+    height: 30px;
+    padding: 10px;
+    text-indent: 40px;
+    align-content: center;
+}
+
+footer .cajainferior{
+    color: #000;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dfe1e5;  
+    text-decoration: none;
+    align-content: center;
+}
+
+footer ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    padding: 6px;
+    color: #000;
+    margin-right: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #3c4043;
+    cursor: hand;
+}
+
+a:hover{
+    color: #000;
+    text-decoration: underline;
+}
+
+@media (max-width: 750px){
+    .cajainferior{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+}
